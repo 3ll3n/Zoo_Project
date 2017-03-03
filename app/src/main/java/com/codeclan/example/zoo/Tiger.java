@@ -8,9 +8,15 @@ import static android.R.attr.name;
 
 public class Tiger extends Animal implements Swimmable {
 
+    private String name;
+    private int age;
 
-    public Tiger() {
+    public Tiger(String name, int age) {
+       super(name, age);
+    }
 
+    public String canSwim() {
+        return "I love to swim!";
     }
 
     public String canRoar() {

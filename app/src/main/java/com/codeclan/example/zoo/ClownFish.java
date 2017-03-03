@@ -1,8 +1,8 @@
-package com.codeclan.example.zoo;
-
-/**
- * Created by user on 03/03/2017.
- */
-
-public class ClownFish extends Animal implements Swimmable {
-}
+//package com.codeclan.example.zoo;
+//
+///**
+// * Created by user on 03/03/2017.
+// */
+//
+//public class ClownFish extends Animal implements Swimmable {
+//}
