@@ -23,4 +23,15 @@ public class TestClownFish {
         assertEquals("I live in the water and love to swim!", clownfish.canSwim());
     }
 
+    @Test
+    public void testGetName() {
+        assertEquals("Nemo", clownfish.getName());
+    }
+
+    @Test
+    public void testSetName() {
+        clownfish.setName("NotNemo");
+        assertEquals("NotNemo", clownfish.getName());
+    }
+
 }
