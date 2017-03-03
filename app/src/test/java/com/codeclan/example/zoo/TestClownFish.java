@@ -17,5 +17,10 @@ public class TestClownFish {
     public void before() {
         clownfish = new ClownFish("Nemo", 2);
     }
-    
+
+    @Test
+    public void testCanSwim() {
+        assertEquals("I live in the water and love to swim!", clownfish.canSwim());
+    }
+
 }
