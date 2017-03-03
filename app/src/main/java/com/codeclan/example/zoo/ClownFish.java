@@ -17,4 +17,8 @@ public class ClownFish extends Animal implements Swimmable {
         return "I live in the water and love to swim!";
     }
 
+    public String canBreathe() {
+        return "I can breathe under water!";
+    }
+
 }

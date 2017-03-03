@@ -23,10 +23,10 @@ public class TestClownFish {
         assertEquals("I live in the water and love to swim!", clownfish.canSwim());
     }
 
+    @Test
+    public void testCanBreathe() {
+        assertEquals("I can breathe under water!", clownfish.canBreathe());
+    }
 }
-
-//    canEat
-//    canBreathe
-//            canPoop
 
 
