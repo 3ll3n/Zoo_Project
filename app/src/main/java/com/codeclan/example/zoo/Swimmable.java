@@ -5,4 +5,5 @@ package com.codeclan.example.zoo;
  */
 
 public interface Swimmable {
+    String swim();
 }
