@@ -34,10 +34,21 @@ public class TestTiger {
         assertEquals("Tony", tiger.getName());
     }
 
-//    canEat
-//    canBreathe
-//    canPoop
-    
+    @Test
+    public void testCanEat() {
+        assertEquals("I can eat", tiger.canEat());
+    }
+
+    @Test
+    public void testCanBreathe() {
+        assertEquals("I can breathe", tiger.canBreathe());
+    }
+
+    @Test
+    public void testCanPoop() {
+        assertEquals("I can poop", tiger.canPoop());
+    }
+
     @Test
     public void testCanRoar() {
         assertEquals("Roooaaar", tiger.canRoar());
