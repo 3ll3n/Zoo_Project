@@ -24,28 +24,6 @@ public class TestTiger {
     }
 
     @Test
-    public void testGetName() {
-        assertEquals("Tony", tiger.getName());
-    }
-
-    @Test
-    public void testCanSetName() {
-        tiger.setName("Khan");
-        assertEquals("Khan", tiger.getName());
-    }
-
-    @Test
-    public void testGetAge() {
-        assertEquals(8, tiger.getAge());
-    }
-
-    @Test
-    public void testSetAge() {
-        tiger.setAge(5);
-        assertEquals(5, tiger.getAge());
-    }
-
-    @Test
     public void testCanEat() {
         assertEquals("I can eat meat", tiger.canEat());
     }
