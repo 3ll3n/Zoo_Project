@@ -27,6 +27,11 @@ public class TestClownFish {
     public void testCanBreathe() {
         assertEquals("I can breathe under water!", clownfish.canBreathe());
     }
+
+    @Test
+    public void testCanBeFound() {
+        assertEquals("I can be found!", clownfish.canBeFound());
+    }
 }
 
 
