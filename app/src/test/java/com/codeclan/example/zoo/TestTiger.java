@@ -29,16 +29,6 @@ public class TestTiger {
     }
 
     @Test
-    public void testCanBreathe() {
-        assertEquals("I can breathe", tiger.canBreathe());
-    }
-
-    @Test
-    public void testCanPoop() {
-        assertEquals("I can poop", tiger.canPoop());
-    }
-
-    @Test
     public void testCanRoar() {
         assertEquals("Roooaaar", tiger.canRoar());
     }

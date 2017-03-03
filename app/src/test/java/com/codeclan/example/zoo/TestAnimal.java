@@ -39,4 +39,14 @@ public class TestAnimal {
         tiger.setAge(5);
         assertEquals(5, tiger.getAge());
     }
+
+    @Test
+    public void testCanBreathe() {
+        assertEquals("I can breathe", tiger.canBreathe());
+    }
+
+    @Test
+    public void testCanPoop() {
+        assertEquals("I can poop", tiger.canPoop());
+    }
 }
