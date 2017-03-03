@@ -47,7 +47,7 @@ public class TestTiger {
 
     @Test
     public void testCanEat() {
-        assertEquals("I can eat", tiger.canEat());
+        assertEquals("I can eat meat", tiger.canEat());
     }
 
     @Test

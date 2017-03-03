@@ -45,4 +45,8 @@ public class TestClownFish {
         assertEquals(5, clownfish.getAge());
     }
 
+//    canEat
+//    canBreathe
+//            canPoop
+
 }
