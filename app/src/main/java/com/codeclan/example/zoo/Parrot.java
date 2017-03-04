@@ -16,4 +16,8 @@ public class Parrot extends Animal implements Flyable {
     public String fly() {
         return "I can fly!";
     }
+
+    public String talk() {
+        return "I can talk!";
+    }
 }

@@ -22,4 +22,9 @@ public class TestParrot {
     public void testFly() {
         assertEquals("I can fly!", parrot.fly());
     }
+
+    @Test
+    public void testTalk() {
+        assertEquals("I can talk!", parrot.talk());
+    }
 }
