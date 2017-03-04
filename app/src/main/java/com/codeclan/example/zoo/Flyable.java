@@ -5,5 +5,5 @@ package com.codeclan.example.zoo;
  */
 
 public interface Flyable {
-    String canFly();
+    String fly();
 }

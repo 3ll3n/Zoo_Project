@@ -13,15 +13,15 @@ public class ClownFish extends Animal implements Swimmable {
         super(name, age);
     }
 
-    public String canSwim() {
+    public String swim() {
         return "I live in the water and love to swim!";
     }
 
-    public String canBreathe() {
+    public String breathe() {
         return "I can breathe under water!";
     }
 
-    public String canBeFound() {
-        return "I can be found!";
+    public String blowBubbles() {
+        return "I can blow bubbles!";
     }
 }

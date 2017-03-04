@@ -19,18 +19,18 @@ public class TestTiger {
     }
 
     @Test
-    public void testCanSwim() {
-        assertEquals("I love to swim!", tiger.canSwim());
+    public void testSwim() {
+        assertEquals("I love to swim!", tiger.swim());
     }
 
     @Test
-    public void testCanEat() {
-        assertEquals("I can eat meat", tiger.canEat());
+    public void testEat() {
+        assertEquals("I can eat meat", tiger.eat());
     }
 
     @Test
-    public void testCanRoar() {
-        assertEquals("Roooaaar", tiger.canRoar());
+    public void testroar() {
+        assertEquals("Roooaaar", tiger.roar());
     }
 
 

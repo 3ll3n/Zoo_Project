@@ -30,15 +30,15 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public String canEat() {
+    public String eat() {
         return "I can eat";
     }
 
-    public String canBreathe() {
+    public String breathe() {
         return "I can breathe";
     }
 
-    public String canPoop() {
+    public String poop() {
         return "I can poop";
     }
 }

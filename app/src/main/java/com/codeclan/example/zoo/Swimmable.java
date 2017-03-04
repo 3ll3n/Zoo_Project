@@ -5,5 +5,5 @@ package com.codeclan.example.zoo;
  */
 
 public interface Swimmable {
-    String canSwim();
+    String swim();
 }

@@ -43,17 +43,17 @@ public class TestAnimal {
     }
 
     @Test
-    public void testCanBreathe() {
-        assertEquals("I can breathe", tiger.canBreathe());
+    public void testBreathe() {
+        assertEquals("I can breathe", tiger.breathe());
     }
 
     @Test
-    public void testCanPoop() {
-        assertEquals("I can poop", tiger.canPoop());
+    public void testpoop() {
+        assertEquals("I can poop", tiger.poop());
     }
 
     @Test
-    public void testCanEat() {
-        assertEquals("I can eat", clownfish.canEat());
+    public void testeat() {
+        assertEquals("I can eat", clownfish.eat());
     }
 }

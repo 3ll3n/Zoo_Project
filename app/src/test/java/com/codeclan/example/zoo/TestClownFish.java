@@ -19,18 +19,18 @@ public class TestClownFish {
     }
 
     @Test
-    public void testCanSwim() {
-        assertEquals("I live in the water and love to swim!", clownfish.canSwim());
+    public void testSwim() {
+        assertEquals("I live in the water and love to swim!", clownfish.swim());
     }
 
     @Test
-    public void testCanBreathe() {
-        assertEquals("I can breathe under water!", clownfish.canBreathe());
+    public void testBreathe() {
+        assertEquals("I can breathe under water!", clownfish.breathe());
     }
 
     @Test
-    public void testCanBeFound() {
-        assertEquals("I can be found!", clownfish.canBeFound());
+    public void testBlowBubbles() {
+        assertEquals("I can blow bubbles!", clownfish.blowBubbles());
     }
 }
 

@@ -15,16 +15,16 @@ public class Tiger extends Animal implements Swimmable {
        super(name, age);
     }
 
-    public String canSwim() {
+    public String swim() {
         return "I love to swim!";
     }
 
-    public String canRoar() {
+    public String roar() {
         return "Roooaaar";
     }
 
     @Override
-    public String canEat() {
+    public String eat() {
         return "I can eat meat";
     }
 }
