@@ -51,10 +51,6 @@ public class TestAnimal {
         assertEquals("I can breathe", tiger.breathe());
     }
 
-    @Test
-    public void testPoop() {
-        assertEquals("I can poop", tiger.poop());
-    }
 
     @Test
     public void testBellyEmpty() {
@@ -65,5 +61,12 @@ public class TestAnimal {
     public void canEatAnimalFood() {
         tiger.eat(animalfood);
         assertEquals(tiger.foodCount(), 1);
+    }
+
+    @Test
+    public void testPoop() {
+        parrot.eat(animalfood);
+        parrot.poop();
+        assertEquals(parrot.foodCount(), 0);
     }
 }
