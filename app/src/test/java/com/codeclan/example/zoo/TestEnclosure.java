@@ -20,7 +20,7 @@ public class TestEnclosure {
 
     @Before
     public void before() {
-        enclosure = new Enclosure("Tigers");
+        enclosure = new Enclosure("Big Cats");
         tiger = new Tiger("Tony", 8);
         parrot = new Parrot("Polymorphism", 20);
     }
@@ -36,6 +36,15 @@ public class TestEnclosure {
        enclosure.addAnimal(tiger);
        enclosure.addAnimal(parrot);
        assertEquals(2, enclosure.getNumberOfAnimals());
+   }
+
+   @Test
+    public void testRemoveAnimal() {
+       enclosure.addAnimal(tiger);
+       enclosure.addAnimal(parrot);
+       enclosure.removeAnimal(tiger);
+       assertEquals(1, enclosure.getNumberOfAnimals());
+
    }
 //
 //    @Test

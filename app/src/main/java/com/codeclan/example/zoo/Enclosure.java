@@ -25,4 +25,11 @@ public class Enclosure {
     public int getNumberOfAnimals() {
         return animals.size();
     }
+
+    public void removeAnimal(Animal animal) {
+        for (Animal animalName : animals) {
+            if (name.equals(animalName));
+            animals.remove(animal);
+        }
+    }
 }
