@@ -35,15 +35,19 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public String eat() {
-        return "I can eat";
-    }
-
     public String breathe() {
         return "I can breathe";
     }
 
     public String poop() {
         return "I can poop";
+    }
+
+    public int foodCount() {
+        return belly.size();
+    }
+
+    public void eat(Edible food) {
+        belly.add(food);
     }
 }

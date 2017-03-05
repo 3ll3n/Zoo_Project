@@ -23,8 +23,4 @@ public class Tiger extends Animal implements Swimmable {
         return "Roooaaar";
     }
 
-    @Override
-    public String eat() {
-        return "I can eat meat";
-    }
 }

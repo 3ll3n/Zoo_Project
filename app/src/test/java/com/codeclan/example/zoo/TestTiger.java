@@ -24,11 +24,6 @@ public class TestTiger {
     }
 
     @Test
-    public void testEat() {
-        assertEquals("I can eat meat", tiger.eat());
-    }
-
-    @Test
     public void testroar() {
         assertEquals("Roooaaar", tiger.roar());
     }

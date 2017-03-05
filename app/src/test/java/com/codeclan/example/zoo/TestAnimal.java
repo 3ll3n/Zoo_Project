@@ -13,11 +13,15 @@ public class TestAnimal {
 
     Tiger tiger;
     ClownFish clownfish;
+    Parrot parrot;
+    AnimalFood animalfood;
 
     @Before
     public void before() {
         tiger = new Tiger("Tony", 8);
         clownfish = new ClownFish("Nemo", 2);
+        parrot = new Parrot("Polymorphism", 20);
+        animalfood = new AnimalFood();
     }
 
     @Test
@@ -48,12 +52,18 @@ public class TestAnimal {
     }
 
     @Test
-    public void testpoop() {
+    public void testPoop() {
         assertEquals("I can poop", tiger.poop());
     }
 
     @Test
-    public void testeat() {
-        assertEquals("I can eat", clownfish.eat());
+    public void testBellyEmpty() {
+        assertEquals(0, tiger.foodCount());
+    }
+
+    @Test
+    public void canEatAnimalFood() {
+        tiger.eat(animalfood);
+        assertEquals(tiger.foodCount(), 1);
     }
 }
