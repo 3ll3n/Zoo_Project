@@ -48,7 +48,7 @@ public class TestEnclosure {
    }
 //
 //    @Test
-//    public void testCanFeedAnimal() {
+//    public void testFeedAnimal() {
 //
 //    }
 
