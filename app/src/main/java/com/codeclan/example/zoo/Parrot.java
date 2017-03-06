@@ -4,7 +4,7 @@ package com.codeclan.example.zoo;
  * Created by user on 03/03/2017.
  */
 
-public class Parrot extends Animal implements Ifly {
+public class Parrot extends Animal implements IFly {
 
     private String name;
     private int age;
