@@ -6,9 +6,6 @@ package com.codeclan.example.zoo;
 
 public class Tiger extends Animal implements IPredator {
 
-    private String name;
-    private int age;
-
     public Tiger(String name, int age) {
        super(name, age);
     }

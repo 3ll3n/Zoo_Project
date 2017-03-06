@@ -10,7 +10,9 @@ public abstract class Animal {
 
     private String name;
     private int age;
-    private ArrayList<IEdible> belly;
+    protected ArrayList<IEdible> belly;
+
+    public abstract void eat(IEdible food);
 
     public Animal(String name, int age) {
         this.name = name;
@@ -40,9 +42,6 @@ public abstract class Animal {
 
     public int foodCount() {
         return belly.size();
-    }
-
-    public void eat(IEdible food){
     }
 
     public void poop() {

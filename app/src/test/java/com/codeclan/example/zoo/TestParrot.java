@@ -30,9 +30,9 @@ public class TestParrot {
         assertEquals("I can talk!", parrot.talk());
     }
 
-//    @Test
-//    public void testCanEatSeeds() {
-//        parrot.eat(seeds);
-//        assertEquals(1, parrot.foodCount());
-//    }
+    @Test
+    public void testCanEatSeeds() {
+        parrot.eat(seeds);
+        assertEquals(1, parrot.foodCount());
+    }
 }

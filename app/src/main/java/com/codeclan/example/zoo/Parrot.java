@@ -6,8 +6,8 @@ package com.codeclan.example.zoo;
 
 public class Parrot extends Animal implements IFly {
 
-    private String name;
-    private int age;
+
+
 
     public Parrot(String name, int age) {
         super(name, age);
@@ -21,8 +21,12 @@ public class Parrot extends Animal implements IFly {
         return "I can talk!";
     }
 
-//    @Override
-//    public void eat(IFruit seeds) {
-//        this.belly.add(seeds);
-//    }
+    @Override
+    public void eat(IEdible food) {
+        if (food instanceof IFruit) {
+            belly.add(food);
+        } else {
+            System.out.println("YUCK!");
+        }
+    }
 }

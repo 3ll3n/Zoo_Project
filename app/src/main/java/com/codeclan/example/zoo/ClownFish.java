@@ -6,9 +6,6 @@ package com.codeclan.example.zoo;
 
 public class ClownFish extends Animal implements ISwim {
 
-    private String name;
-    private int age;
-
     public ClownFish(String name, int age) {
         super(name, age);
     }
