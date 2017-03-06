@@ -13,11 +13,13 @@ public class TestTiger {
 
     Tiger tiger;
     Steak steak;
+    Seeds seeds;
 
     @Before
     public void before() {
         tiger = new Tiger("Tony", 8);
         steak = new Steak();
+        seeds = new Seeds();
     }
 
     @Test
@@ -36,10 +38,9 @@ public class TestTiger {
         assertEquals(1, tiger.foodCount());
     }
 
-//    @Test
-//    public void testCantEatSeeds() {
-//
-//    }
-
-
+    @Test
+    public void testCantEatSeeds() {
+        tiger.eat(seeds);
+        assertEquals(0, tiger.foodCount());
+    }
 }
