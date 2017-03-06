@@ -13,11 +13,13 @@ public class TestParrot {
 
     Parrot parrot;
     Seeds seeds;
+    Algae algae;
 
     @Before
     public void before() {
         parrot = new Parrot("Polymorphism", 20);
         seeds = new Seeds();
+        algae = new Algae();
     }
 
     @Test
@@ -36,8 +38,9 @@ public class TestParrot {
         assertEquals(1, parrot.foodCount());
     }
 
-//    @Test
-//    public void testCantEatAlgae() {
-//
-//    }
+    @Test
+    public void testCantEatAlgae() {
+        parrot.eat(algae);
+        assertEquals(0, parrot.foodCount());
+    }
 }
