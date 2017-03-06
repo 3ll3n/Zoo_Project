@@ -18,4 +18,14 @@ public class Tiger extends Animal implements IPredator {
         return "I am a hunter";
     }
 
+    @Override
+    public void eat(IEdible food) {
+        if (food instanceof IMeat) {
+            belly.add(food);
+        }
+        else {
+            System.out.println("Yuck! Give me Steak!");
+        }
+    }
+
 }

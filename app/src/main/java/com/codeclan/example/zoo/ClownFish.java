@@ -21,4 +21,14 @@ public class ClownFish extends Animal implements ISwim {
     public String blowBubbles() {
         return "I can blow bubbles!";
     }
+
+    @Override
+    public void eat (IEdible food){
+        if (food instanceof IPlant) {
+            belly.add(food);
+        }
+        else{
+            System.out.println("I can't eat that!");
+        }
+    }
 }

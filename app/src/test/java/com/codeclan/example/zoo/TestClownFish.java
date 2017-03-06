@@ -12,10 +12,12 @@ import static org.junit.Assert.assertEquals;
 public class TestClownFish {
 
     ClownFish clownfish;
+    Algae algae;
 
     @Before
     public void before() {
         clownfish = new ClownFish("Nemo", 2);
+        algae = new Algae();
     }
 
     @Test
@@ -32,6 +34,17 @@ public class TestClownFish {
     public void testBlowBubbles() {
         assertEquals("I can blow bubbles!", clownfish.blowBubbles());
     }
+
+    @Test
+    public void testCanEatAlgae() {
+        clownfish.eat(algae);
+        assertEquals(1, clownfish.foodCount());
+    }
+
+//    @Test
+//    public void testCantEatSteak() {
+//
+//    }
 }
 
 

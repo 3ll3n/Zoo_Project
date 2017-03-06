@@ -6,9 +6,6 @@ package com.codeclan.example.zoo;
 
 public class Parrot extends Animal implements IFly {
 
-
-
-
     public Parrot(String name, int age) {
         super(name, age);
     }

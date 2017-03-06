@@ -35,4 +35,9 @@ public class TestParrot {
         parrot.eat(seeds);
         assertEquals(1, parrot.foodCount());
     }
+
+//    @Test
+//    public void testCantEatAlgae() {
+//
+//    }
 }
