@@ -11,16 +11,19 @@ import static org.junit.Assert.assertEquals;
 
 public class TestBigCat {
 
-    Enclosure tiger;
+    Enclosure bigcat;
+    Animal tiger;
 
     @Before
     public void before() {
-        Animal tiger = new Tiger("Pegasus", 3);
+        bigcat = new BigCat("Big Cats");
+        tiger = new Tiger("Scar", 15);
     }
 
     @Test
     public void testAddAnimals() {
-        assertEquals(1, tiger.getNumberOfAnimals());
+        animals.addAnimal(tiger);
+        assertEquals(1, bigcat.getNumberOfAnimals());
     }
 }
 

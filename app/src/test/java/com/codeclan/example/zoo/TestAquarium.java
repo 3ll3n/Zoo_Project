@@ -11,16 +11,19 @@ import static org.junit.Assert.assertEquals;
 
 public class TestAquarium {
 
-    Enclosure fish;
+    Enclosure aquarium;
+    Animal clownfish;
 
     @Before
     public void before() {
-        Animal fish = new ClownFish("Flounder", 7);
+        aquarium = new Aquarium("Aquarium");
+        clownfish = new ClownFish("Flounder", 7);
     }
 
     @Test
-    public void testAddAnimals() {
-        assertEquals(1, fish.getNumberOfAnimals());
+    public void testAddAnimal() {
+        animals.addAnimal(clownfish);
+        assertEquals(1, aquarium.getNumberOfAnimals());
     }
 
 }
