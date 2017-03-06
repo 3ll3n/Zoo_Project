@@ -56,12 +56,6 @@ public class TestAnimal {
     }
 
 //    @Test
-//    public void canEatAnimalFood() {
-//        tiger.eat(animalfood);
-//        assertEquals(tiger.foodCount(), 1);
-//    }
-//
-//    @Test
 //    public void testPoop() {
 //        parrot.eat(animalfood);
 //        parrot.poop();

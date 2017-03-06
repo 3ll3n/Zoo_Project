@@ -4,5 +4,5 @@ package com.codeclan.example.zoo;
  * Created by user on 06/03/2017.
  */
 
-public class Seeds implements IOmnivore {
+public class Seeds implements IFruit {
 }

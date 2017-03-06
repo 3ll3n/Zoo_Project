@@ -20,4 +20,9 @@ public class Parrot extends Animal implements IFly {
     public String talk() {
         return "I can talk!";
     }
+
+    @Override
+    public void eat(IFruit seeds) {
+        this.belly.add(seeds);
+    }
 }
