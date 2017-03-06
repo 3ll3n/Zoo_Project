@@ -12,7 +12,7 @@ public class BigCat extends Enclosure {
 
     @Override
     public void addAnimal(Animal animal){
-        if (animal instanceof IPredator) {
+        if (animal instanceof BigCat) {
             animals.add(animal);
         } else {
             System.out.println("Only tigers allowed in here!");
