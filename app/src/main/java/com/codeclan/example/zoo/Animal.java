@@ -1,6 +1,5 @@
 package com.codeclan.example.zoo;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -11,12 +10,12 @@ public abstract class Animal {
 
     private String name;
     private int age;
-    private ArrayList<Edible> belly;
+    private ArrayList<Iedible> belly;
 
     public Animal(String name, int age) {
         this.name = name;
         this.age = age;
-        this.belly = new ArrayList<Edible>();
+        this.belly = new ArrayList<Iedible>();
     }
 
     public String getName() {
@@ -43,7 +42,7 @@ public abstract class Animal {
         return belly.size();
     }
 
-    public void eat(Edible food){
+    public void eat(Iedible food){
     }
 
     public void poop() {
