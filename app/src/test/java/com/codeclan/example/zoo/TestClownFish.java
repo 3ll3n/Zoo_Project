@@ -13,11 +13,13 @@ public class TestClownFish {
 
     ClownFish clownfish;
     Algae algae;
+    Steak steak;
 
     @Before
     public void before() {
         clownfish = new ClownFish("Nemo", 2);
         algae = new Algae();
+        steak = new Steak();
     }
 
     @Test
@@ -41,10 +43,11 @@ public class TestClownFish {
         assertEquals(1, clownfish.foodCount());
     }
 
-//    @Test
-//    public void testCantEatSteak() {
-//
-//    }
+    @Test
+    public void testCantEatSteak() {
+        clownfish.eat(steak);
+        assertEquals(0, clownfish.foodCount());
+    }
 }
 
 
