@@ -10,13 +10,17 @@ import java.util.ArrayList;
 public abstract class Enclosure {
 
     private String name;
-    private ArrayList<Animal> animals;
+    protected ArrayList<Animal> animals;
 
     public abstract void addAnimal(Animal animal);
 
     public Enclosure(String name) {
         this.name = name;
         this.animals = new ArrayList<Animal>();
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getNumberOfAnimals() {

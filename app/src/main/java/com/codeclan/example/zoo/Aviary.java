@@ -10,9 +10,13 @@ public class Aviary extends Enclosure {
         super(name);
     }
 
-//    @Override
-//    public void addAnimal(Animal animal){
-//
-//    }
+    @Override
+    public void addAnimal(Animal animal){
+        if (animal instanceof IFly) {
+            animals.add(animal);
+        } else {
+            System.out.println("Only birds allowed in here!");
+        }
+    }
 
 }

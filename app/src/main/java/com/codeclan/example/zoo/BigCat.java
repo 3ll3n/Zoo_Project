@@ -4,18 +4,18 @@ package com.codeclan.example.zoo;
  * Created by user on 06/03/2017.
  */
 
-public class Aquarium extends Enclosure {
+public class BigCat extends Enclosure {
 
-    public Aquarium(String name) {
+    public BigCat(String name) {
         super(name);
     }
 
     @Override
     public void addAnimal(Animal animal){
-        if (animal instanceof ISwim) {
+        if (animal instanceof IPredator) {
             animals.add(animal);
         } else {
-            System.out.println("Only fish allowed in here!");
+            System.out.println("Only tigers allowed in here!");
         }
 
     }

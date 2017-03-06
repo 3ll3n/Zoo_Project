@@ -9,18 +9,18 @@ import static org.junit.Assert.assertEquals;
  * Created by user on 06/03/2017.
  */
 
-public class TestAquarium {
+public class TestBigCat {
 
-    Enclosure fish;
+    Enclosure tiger;
 
     @Before
     public void before() {
-        Animal fish = new ClownFish("Flounder", 7);
+        Animal tiger = new Tiger("Pegasus", 3);
     }
 
     @Test
     public void testAddAnimals() {
-        assertEquals(1, fish.getNumberOfAnimals());
+        assertEquals(1, tiger.getNumberOfAnimals());
     }
-
 }
+

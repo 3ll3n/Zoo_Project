@@ -18,8 +18,8 @@ public class TestZoo {
     @Before
     public void before() {
         zoo = new Zoo("Animal Sanctuary");
-        enclosure1 = new Enclosure("Big Cats");
-        enclosure2 = new Enclosure("Aviary");
+        enclosure1 = new BigCat("Big Cats");
+        enclosure2 = new Aviary("Aviary");
     }
 
     @Test
