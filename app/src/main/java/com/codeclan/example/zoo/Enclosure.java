@@ -32,4 +32,10 @@ public class Enclosure {
             animals.remove(animal);
         }
     }
+
+    public void feedAnimal(IEdible food) {
+        for (Animal animal : animals) {
+            animal.eat(food);
+        }
+    }
 }
