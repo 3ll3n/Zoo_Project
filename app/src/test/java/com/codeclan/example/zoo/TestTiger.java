@@ -19,11 +19,6 @@ public class TestTiger {
     }
 
     @Test
-    public void testSwim() {
-        assertEquals("I love to swim!", tiger.swim());
-    }
-
-    @Test
     public void testroar() {
         assertEquals("Roooaaar", tiger.roar());
     }

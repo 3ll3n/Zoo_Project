@@ -19,7 +19,7 @@ public class Enclosure {
     }
 
     public void addAnimal(Animal animal) {
-       this.animals.add(animal);
+       animals.add(animal);
     }
 
     public int getNumberOfAnimals() {

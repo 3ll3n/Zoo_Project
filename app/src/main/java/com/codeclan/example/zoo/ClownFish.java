@@ -4,7 +4,7 @@ package com.codeclan.example.zoo;
  * Created by user on 03/03/2017.
  */
 
-public class ClownFish extends Animal implements Swimmable, Edible {
+public class ClownFish extends Animal implements Iswim, Edible {
 
     private String name;
     private int age;
