@@ -22,7 +22,7 @@ public class TestBigCat {
 
     @Test
     public void testAddAnimals() {
-        animals.addAnimal(tiger);
+        bigcat.addAnimal(tiger);
         assertEquals(1, bigcat.getNumberOfAnimals());
     }
 }

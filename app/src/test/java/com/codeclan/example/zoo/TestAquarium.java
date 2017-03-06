@@ -22,7 +22,7 @@ public class TestAquarium {
 
     @Test
     public void testAddAnimal() {
-        animals.addAnimal(clownfish);
+        aquarium.addAnimal(clownfish);
         assertEquals(1, aquarium.getNumberOfAnimals());
     }
 
