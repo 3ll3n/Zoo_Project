@@ -12,14 +12,10 @@ import static org.junit.Assert.assertEquals;
 public class TestTiger {
 
     Tiger tiger;
-    Steak steak;
-    Seeds seeds;
 
     @Before
     public void before() {
         tiger = new Tiger("Tony", 8);
-        steak = new Steak();
-        seeds = new Seeds();
     }
 
     @Test
@@ -34,12 +30,14 @@ public class TestTiger {
 
     @Test
     public void testCanEatSteak() {
+        Steak steak = new Steak();
         tiger.eat(steak);
         assertEquals(1, tiger.foodCount());
     }
 
     @Test
     public void testCantEatSeeds() {
+        Seeds seeds = new Seeds();
         tiger.eat(seeds);
         assertEquals(0, tiger.foodCount());
     }

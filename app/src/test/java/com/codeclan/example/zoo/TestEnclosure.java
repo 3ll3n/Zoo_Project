@@ -46,7 +46,7 @@ public class TestEnclosure {
        assertEquals(1, enclosure.getNumberOfAnimals());
 
    }
-
+//
 //    @Test
 //    public void testFeedAnimal() {
 //

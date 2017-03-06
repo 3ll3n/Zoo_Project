@@ -12,14 +12,10 @@ import static org.junit.Assert.assertEquals;
 public class TestParrot {
 
     Parrot parrot;
-    Seeds seeds;
-    Algae algae;
 
     @Before
     public void before() {
         parrot = new Parrot("Polymorphism", 20);
-        seeds = new Seeds();
-        algae = new Algae();
     }
 
     @Test
@@ -34,12 +30,14 @@ public class TestParrot {
 
     @Test
     public void testCanEatSeeds() {
+        Seeds seeds = new Seeds();
         parrot.eat(seeds);
         assertEquals(1, parrot.foodCount());
     }
 
     @Test
     public void testCantEatAlgae() {
+        Algae algae = new Algae();
         parrot.eat(algae);
         assertEquals(0, parrot.foodCount());
     }

@@ -14,14 +14,12 @@ public class TestAnimal {
     Tiger tiger;
     ClownFish clownfish;
     Parrot parrot;
-    Seeds seeds;
 
     @Before
     public void before() {
         tiger = new Tiger("Tony", 8);
         clownfish = new ClownFish("Nemo", 2);
         parrot = new Parrot("Polymorphism", 20);
-        seeds = new Seeds();
     }
 
     @Test
@@ -59,6 +57,7 @@ public class TestAnimal {
 
     @Test
     public void testPoop() {
+        Seeds seeds = new Seeds();
         parrot.eat(seeds);
         parrot.poop();
         assertEquals(parrot.foodCount(), 0);
