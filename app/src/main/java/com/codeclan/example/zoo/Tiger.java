@@ -17,4 +17,8 @@ public class Tiger extends Animal implements IPredator {
         return "Roooaaar";
     }
 
+    public String hunt() {
+        return "I am a hunter";
+    }
+
 }

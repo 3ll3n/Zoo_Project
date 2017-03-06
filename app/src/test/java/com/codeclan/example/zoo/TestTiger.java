@@ -19,8 +19,13 @@ public class TestTiger {
     }
 
     @Test
-    public void testroar() {
+    public void testRoar() {
         assertEquals("Roooaaar", tiger.roar());
+    }
+
+    @Test
+    public void testHunt() {
+        assertEquals("I am a hunter", tiger.hunt());
     }
 
 

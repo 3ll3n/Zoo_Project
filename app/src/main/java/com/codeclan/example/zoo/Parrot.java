@@ -21,8 +21,8 @@ public class Parrot extends Animal implements IFly {
         return "I can talk!";
     }
 
-    @Override
-    public void eat(IFruit seeds) {
-        this.belly.add(seeds);
-    }
+//    @Override
+//    public void eat(IFruit seeds) {
+//        this.belly.add(seeds);
+//    }
 }
