@@ -44,17 +44,20 @@ public class TestEnclosure {
        enclosure.addAnimal(parrot);
        enclosure.removeAnimal(tiger);
        assertEquals(1, enclosure.getNumberOfAnimals());
-
    }
 
     @Test
     public void testFeedAnimal() {
         Steak steak = new Steak();
         enclosure.addAnimal(tiger);
+
         Tiger tiger2 = new Tiger("Fluffy", 22);
         enclosure.addAnimal(tiger2);
-        enclosure.feedAnimal(steak);
+        enclosure.addAnimal(parrot);
+        enclosure.feedAnimals(steak);
+
         assertEquals(1, tiger.foodCount());
         assertEquals(1, tiger2.foodCount());
+        assertEquals(0, parrot.foodCount());
     }
 }
