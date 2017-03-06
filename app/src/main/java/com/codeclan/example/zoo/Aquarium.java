@@ -10,4 +10,9 @@ public class Aquarium extends Enclosure {
         super(name);
     }
 
+//    @Override
+//    public void addAnimal(Animal animal){
+//
+//    }
+
 }
