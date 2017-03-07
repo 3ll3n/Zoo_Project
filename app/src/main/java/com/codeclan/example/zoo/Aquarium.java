@@ -14,6 +14,8 @@ public class Aquarium extends Enclosure {
     public void addAnimal(Animal animal){
         if (animal instanceof ISwim) {
             animals.add(animal);
+        } else {
+            System.out.println("Only clownfish in here thanks!");
         }
     }
 }
