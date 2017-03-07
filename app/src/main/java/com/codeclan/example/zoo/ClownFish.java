@@ -26,6 +26,7 @@ public class ClownFish extends Animal implements ISwim {
     public void eat (IEdible food){
         if (food instanceof IPlant) {
             belly.add(food);
+            System.out.println("That food was lovely thanks!");
         }else {
             System.out.println("Yuck!");
         }

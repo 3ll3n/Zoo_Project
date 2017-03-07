@@ -22,6 +22,7 @@ public class Tiger extends Animal implements IPredator {
     public void eat(IEdible food) {
         if (food instanceof IMeat) {
             belly.add(food);
+            System.out.println("Thank you for my steak!");
         } else {
         System.out.println("Yuck! I want steak!");
         }

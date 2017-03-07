@@ -22,6 +22,7 @@ public class Parrot extends Animal implements IFly {
     public void eat(IEdible food) {
         if (food instanceof IFruit) {
             belly.add(food);
+            System.out.println("Yum!");
         } else {
         System.out.println("I don't like that!");
         }
