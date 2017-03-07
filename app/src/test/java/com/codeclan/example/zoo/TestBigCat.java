@@ -32,7 +32,6 @@ public class TestBigCat {
     public void testCantAddWrongAnimal() {
         bigcat.addAnimal(clownfish);
         assertEquals(0, bigcat.getNumberOfAnimals());
-
     }
 }
 
