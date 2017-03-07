@@ -28,10 +28,7 @@ public abstract class Enclosure {
     }
 
     public void removeAnimal(Animal animal) {
-        for (Animal animalName : animals) {
-            if (name.equals(animalName));
             animals.remove(animal);
-        }
     }
 
     public void feedAnimals(IEdible food) {

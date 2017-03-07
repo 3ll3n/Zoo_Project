@@ -12,7 +12,7 @@ public class Aquarium extends Enclosure {
 
     @Override
     public void addAnimal(Animal animal){
-        if (animal instanceof Aquarium) {
+        if (animal instanceof ISwim) {
             animals.add(animal);
         } else {
             System.out.println("Only fish allowed in here!");
