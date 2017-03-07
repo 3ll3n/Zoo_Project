@@ -15,7 +15,5 @@ public class BigCat extends Enclosure {
         if (animal instanceof IPredator) {
             animals.add(animal);
         }
-
     }
-
 }

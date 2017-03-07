@@ -14,9 +14,6 @@ public class Aviary extends Enclosure {
     public void addAnimal(Animal animal){
         if (animal instanceof IFly) {
             animals.add(animal);
-        } else {
-            System.out.println("Only birds allowed in here!");
         }
     }
-
 }
