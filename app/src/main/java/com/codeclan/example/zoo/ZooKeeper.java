@@ -21,19 +21,25 @@ public class ZooKeeper {
         Scanner sc = new Scanner(System.in);
 
         if (sc.nextInt() == 1) {
-            System.out.println("The enclosures you can choose from are: Big Cats, Aquarium or Aviary");
-            if (sc.nextLine() == "Big Cats");
+            System.out.println("For Big Cats type 1, Aquarium type 2 or Aviary type 3");
+            if (sc.nextInt() == 1);
             zoo.addEnclosure(enclosure);
-            System.out.println("..... enclosure added!");
+            System.out.println("Big Cats enclosure added!");
+            if (sc.nextInt() == 2);
+            zoo.addEnclosure(enclosure1);
+            System.out.println("Aquarium added!");
+            if (sc.nextInt() == 3);
+            zoo.addEnclosure(enclosure2);
+            System.out.println("Aviary added!");
         }
 
-        if (sc.nextInt() == 2) {
-            System.out.println("The animals you can choose to add are: Tiger, ClownFish or Parrot");
-        }
-
-        if (sc.nextInt() == 3) {
-            System.out.println("The animals you can feed are: Tiger, ClownFish or Parrot");
-        }
+//        if (sc.nextInt() == 2) {
+//            System.out.println("The animals you can choose to add are: Tiger, ClownFish or Parrot");
+//        }
+//
+//        if (sc.nextInt() == 3) {
+//            System.out.println("The animals you can feed are: Tiger, ClownFish or Parrot");
+//        }
 
 
 
