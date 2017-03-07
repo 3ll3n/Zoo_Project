@@ -2,6 +2,8 @@ package com.codeclan.example.zoo;
 
 import java.util.Scanner;
 
+import static android.R.attr.type;
+
 /**
  * Created by user on 03/03/2017.
  */
@@ -18,6 +20,11 @@ public class ZooKeeper {
         Animal clownfish = new ClownFish("Nemo", 2);
         Animal parrot = new Parrot("Polymorphism", 20);
 
+        Steak steak = new Steak();
+        Algae algae = new Algae();
+        Seeds seeds = new Seeds();
+
+
         while (true) {
             System.out.println("Type 1 to add a new enclosure.");
             System.out.println("Type 2 to add an animal to an enclosure.");
@@ -28,7 +35,9 @@ public class ZooKeeper {
 
             switch (sc.nextInt()) {
                 case 1:
-                    System.out.println("Type 1 for Big Cats, type 2 for Aquarium or type 3 for Aviary");
+                    System.out.println("Type 1 for Big Cats");
+                    System.out.println("Type 2 for Aquarium");
+                    System.out.println("Type 3 for Aviary");
 
                     switch (sc.nextInt()) {
                         case 1:
@@ -51,7 +60,11 @@ public class ZooKeeper {
                     }
 
                 case 2:
-                    System.out.println("The animals you can choose to add to an enclosure are: Tiger (type 1), ClownFish (type 2) or Parrot (type 3)");
+                    System.out.println("The animals you can choose to add to an enclosure are: ");
+                    System.out.println("Type 1 for Tiger");
+                    System.out.println("Type 2 for Clownfish");
+                    System.out.println("Type 3 for Parrot");
+
                     switch (sc.nextInt()) {
 
                         case 1:
@@ -65,18 +78,27 @@ public class ZooKeeper {
                         case 3:
                             enclosure.addAnimal(parrot);
                             break;
-
                     }
-//
-//                case 3:
-//                    System.out.println("The animals you can feed are: Tiger, ClownFish or Parrot");
-//                    switch (sc.nextInt()) {
-//
-//                    }
+
+                case 3:
+                    System.out.println("The animals you can feed are: Tiger (type 1), ClownFish (type 2) or Parrot (type 3)");
+                    switch (sc.nextInt()) {
+
+                        case 1:
+                            tiger.eat(steak);
+                            break;
+
+                        case 2:
+                            clownfish.eat(algae);
+                            break;
+
+                        case 3:
+                            parrot.eat(seeds);
+                            break;
+                    }
 
                 case 4:
                     System.exit(0);
-
             }
 
         }
