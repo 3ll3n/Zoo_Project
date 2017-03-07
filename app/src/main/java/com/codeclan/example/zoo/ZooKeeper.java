@@ -14,35 +14,46 @@ public class ZooKeeper {
         Enclosure enclosure1 = new Aquarium("Aquarium");
         Enclosure enclosure2 = new Aviary("Aviary");
 
-        System.out.println("Type 1 to add a new enclosure.");
-        System.out.println("Type 2 to add an animal to an enclosure.");
-        System.out.println("Type 3 to feed an animal.");
+        while (true) {
+            System.out.println("Type 1 to add a new enclosure.");
+            System.out.println("Type 2 to add an animal to an enclosure.");
+            System.out.println("Type 3 to feed an animal.");
+            System.out.println("Type 4 to exit.");
 
-        Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
 
-        if (sc.nextInt() == 1) {
-            System.out.println("For Big Cats type 1, Aquarium type 2 or Aviary type 3");
-            if (sc.nextInt() == 1);
-            zoo.addEnclosure(enclosure);
-            System.out.println("Big Cats enclosure added!");
-            if (sc.nextInt() == 2);
-            zoo.addEnclosure(enclosure1);
-            System.out.println("Aquarium added!");
-            if (sc.nextInt() == 3);
-            zoo.addEnclosure(enclosure2);
-            System.out.println("Aviary added!");
+            switch (sc.nextInt()) {
+                case 1:
+                    System.out.println("Type 1 for Big Cats, type 2 for Aquarium or type 3 for Aviary");
+
+                    switch (sc.nextInt()) {
+                        case 1:
+                            zoo.addEnclosure(enclosure);
+                            System.out.println("Big Cats enclosure added!");
+                            break;
+
+                        case 2:
+                            zoo.addEnclosure(enclosure1);
+                            System.out.println("Aquarium added!");
+                            break;
+                        case 3:
+                            zoo.addEnclosure(enclosure2);
+                            System.out.println("Aviary added!");
+                            break;
+                    }
+
+                case 2:
+                    System.out.println("The animals you can choose to add are: Tiger, ClownFish or Parrot");
+
+                case 3:
+                    System.out.println("The animals you can feed are: Tiger, ClownFish or Parrot");
+
+                case 4:
+                    System.exit(0);
+
+            }
+
         }
-
-//        if (sc.nextInt() == 2) {
-//            System.out.println("The animals you can choose to add are: Tiger, ClownFish or Parrot");
-//        }
-//
-//        if (sc.nextInt() == 3) {
-//            System.out.println("The animals you can feed are: Tiger, ClownFish or Parrot");
-//        }
-
-
-
 
     }
 }
