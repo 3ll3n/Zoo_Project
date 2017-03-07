@@ -11,13 +11,8 @@ public class ZooKeeper {
 
         Zoo zoo = new Zoo("Animal Sanctuary");
 
-        Enclosure enclosure = new BigCat("Big Cats");
-        Enclosure enclosure1 = new Aquarium("Aquarium");
-        Enclosure enclosure2 = new Aviary("Aviary");
+        Enclosure enclosure = null;
 
-        Enclosure bigcat = new BigCat("Big Cats");
-        Enclosure aquarium = new Aquarium("Aquarium");
-        Enclosure aviary = new Aviary("Aviary");
 
         Animal tiger = new Tiger("Tony", 8);
         Animal clownfish = new ClownFish("Nemo", 2);
@@ -37,17 +32,20 @@ public class ZooKeeper {
 
                     switch (sc.nextInt()) {
                         case 1:
+                            enclosure = new BigCat("Big Cats");
                             zoo.addEnclosure(enclosure);
                             System.out.println("Big Cats enclosure added!");
                             break;
 
                         case 2:
-                            zoo.addEnclosure(enclosure1);
+                            enclosure = new Aquarium("Aquarium");
+                            zoo.addEnclosure(enclosure);
                             System.out.println("Aquarium added!");
                             break;
 
                         case 3:
-                            zoo.addEnclosure(enclosure2);
+                            enclosure = new Aviary("Aviary");
+                            zoo.addEnclosure(enclosure);
                             System.out.println("Aviary added!");
                             break;
                     }
@@ -57,18 +55,15 @@ public class ZooKeeper {
                     switch (sc.nextInt()) {
 
                         case 1:
-                            bigcat.addAnimal(tiger);
-                            System.out.println("Tiger has been added to the enclosure!");
+                            enclosure.addAnimal(tiger);
                             break;
 
                         case 2:
-                            aquarium.addAnimal(clownfish);
-                            System.out.println("Clownfish has been added to the Aquarium!");
+                            enclosure.addAnimal(clownfish);
                             break;
 
                         case 3:
-                            aviary.addAnimal(parrot);
-                            System.out.println("Parrot has been added to the Aviary!");
+                            enclosure.addAnimal(parrot);
                             break;
 
                     }
