@@ -3,6 +3,7 @@ package com.codeclan.example.zoo;
 import java.util.Scanner;
 
 import static android.R.attr.type;
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
 /**
  * Created by user on 03/03/2017.
@@ -26,6 +27,7 @@ public class ZooKeeper {
 
 
         while (true) {
+
             System.out.println("Type 1 to add a new enclosure.");
             System.out.println("Type 2 to add an animal to an enclosure.");
             System.out.println("Type 3 to feed an animal.");
@@ -35,6 +37,8 @@ public class ZooKeeper {
 
             switch (sc.nextInt()) {
                 case 1:
+
+                    System.out.println("Which enclosure would you like to add?: ");
                     System.out.println("Type 1 for Big Cats");
                     System.out.println("Type 2 for Aquarium");
                     System.out.println("Type 3 for Aviary");
@@ -60,6 +64,7 @@ public class ZooKeeper {
                     }
 
                 case 2:
+
                     System.out.println("The animals you can choose to add to an enclosure are: ");
                     System.out.println("Type 1 for Tiger");
                     System.out.println("Type 2 for Clownfish");
@@ -81,7 +86,13 @@ public class ZooKeeper {
                     }
 
                 case 3:
-                    System.out.println("The animals you can feed are: Tiger (type 1), ClownFish (type 2) or Parrot (type 3)");
+
+                    System.out.println("Please select the food you would like to feed to the animal: ");
+                    System.out.println("Type 1 for Steak");
+                    System.out.println("Type 2 for Algae");
+                    System.out.println("Type 3 for Seeds");
+
+
                     switch (sc.nextInt()) {
 
                         case 1:
