@@ -29,6 +29,13 @@ public class TestEnclosure {
         assertEquals("Big Cats", enclosure.getName());
     }
 
+    @Test
+    public void testGetAnimals() {
+        enclosure.addAnimal(new Tiger("Timmy", 8));
+        enclosure.addAnimal(new Tiger("Theresa", 8));
+        assertEquals(2, enclosure.getNumberOfAnimals());
+    }
+
    @Test
     public void testNumberOfAnimals() {
        enclosure.addAnimal(tiger);

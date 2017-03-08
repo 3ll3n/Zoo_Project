@@ -86,6 +86,10 @@ public class ZooKeeper {
                     }
 
                 case 3:
+                    System.out.println("Please select the animal you would like to feed: ");
+                    System.out.println("Type 1 for Tiger");
+                    System.out.println("Type 2 for ClownFish");
+                    System.out.println("Type 3 for Parrot");
 
                     System.out.println("Please select the food you would like to feed to the animal: ");
                     System.out.println("Type 1 for Steak");

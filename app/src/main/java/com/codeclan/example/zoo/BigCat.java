@@ -14,7 +14,7 @@ public class BigCat extends Enclosure {
     public void addAnimal(Animal animal){
         if (animal instanceof IPredator) {
             animals.add(animal);
-            System.out.println("Tiger has been added to the enclosure!");
+            System.out.println(animal.getName() + " the tiger has been added to the enclosure!");
         } else {
         System.out.println("Only tigers in here thanks!");
         }

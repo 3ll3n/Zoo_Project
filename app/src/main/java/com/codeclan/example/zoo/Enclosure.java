@@ -23,6 +23,10 @@ public abstract class Enclosure {
         return name;
     }
 
+    public ArrayList<Animal> getAnimals() {
+        return animals;
+    }
+
     public int getNumberOfAnimals() {
         return animals.size();
     }
