@@ -30,8 +30,9 @@ public class ZooKeeper {
 
             System.out.println("Type 1 to add a new enclosure.");
             System.out.println("Type 2 to add an animal to an enclosure.");
-            System.out.println("Type 3 to feed an animal.");
-            System.out.println("Type 4 to exit.");
+            System.out.println("Type 3 to choose an animal to feed.");
+            System.out.println("Type 4 to feed the animal.");
+            System.out.println("Type 5 to exit.");
 
             Scanner sc = new Scanner(System.in);
 
@@ -86,16 +87,33 @@ public class ZooKeeper {
                     }
 
                 case 3:
+
                     System.out.println("Please select the animal you would like to feed: ");
                     System.out.println("Type 1 for Tiger");
                     System.out.println("Type 2 for ClownFish");
                     System.out.println("Type 3 for Parrot");
 
+                    switch (sc.nextInt()) {
+
+                        case 1:
+
+                            break;
+
+                        case 2:
+
+                            break;
+
+                        case 3:
+                            
+                            break;
+                    }
+
+                case 4:
+
                     System.out.println("Please select the food you would like to feed to the animal: ");
                     System.out.println("Type 1 for Steak");
                     System.out.println("Type 2 for Algae");
                     System.out.println("Type 3 for Seeds");
-
 
                     switch (sc.nextInt()) {
 
@@ -110,9 +128,10 @@ public class ZooKeeper {
                         case 3:
                             parrot.eat(seeds);
                             break;
+
                     }
 
-                case 4:
+                case 5:
                     System.exit(0);
             }
 
