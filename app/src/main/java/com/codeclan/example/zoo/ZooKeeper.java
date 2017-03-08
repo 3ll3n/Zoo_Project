@@ -103,7 +103,7 @@ public class ZooKeeper {
 
                 case 3:
 
-                    System.out.println("Please select the animals you would like to feed: ");
+                    System.out.println("Please select the animal you would like to feed: ");
                     System.out.println("Type 1 for Tiger");
                     System.out.println("Type 2 for ClownFish");
                     System.out.println("Type 3 for Parrot");
@@ -129,7 +129,7 @@ public class ZooKeeper {
                         case 3:
                             ArrayList<Animal> parrots  = parrotEnclosure.getAnimals();
                             for (Animal parrot1 : parrots) {
-                                System.out.println(parrots);
+                                System.out.println(parrot1.getName());
                             }
                             break;
                     }
