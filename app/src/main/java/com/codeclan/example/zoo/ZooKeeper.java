@@ -80,7 +80,7 @@ public class ZooKeeper {
                             if (tigerEnclosure != null) {
                                 tigerEnclosure.addAnimal(tiger);
                             } else {
-                                System.out.println("BigCat enclosure unavailable!");
+                                System.out.println("Tigers are not allowed in this enclosure!");
                             }
                             break;
 
@@ -88,7 +88,7 @@ public class ZooKeeper {
                             if (clownfishEnclosure != null) {
                                 clownfishEnclosure.addAnimal(clownfish);
                             } else {
-                                System.out.println("Aquarium unavailable!");
+                                System.out.println("ClownFish are not allowed in this enclosure!");
                             }
                             break;
 
@@ -96,7 +96,7 @@ public class ZooKeeper {
                             if (parrotEnclosure != null) {
                                 parrotEnclosure.addAnimal(parrot);
                             } else {
-                                System.out.println("Aviary unavailable");
+                                System.out.println("Parrots are not allowed in this enclosure");
                             }
                             break;
                     }
@@ -154,7 +154,6 @@ public class ZooKeeper {
                         case 3:
                             parrot.eat(seeds);
                             break;
-
                     }
 
                 case 5:
