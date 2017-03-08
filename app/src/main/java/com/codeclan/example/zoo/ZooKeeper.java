@@ -1,8 +1,10 @@
 package com.codeclan.example.zoo;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import static android.R.attr.type;
+import static android.R.id.list;
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
 /**
@@ -14,8 +16,9 @@ public class ZooKeeper {
 
         Zoo zoo = new Zoo("Animal Sanctuary");
 
-        Enclosure enclosure = null;
-
+        Enclosure tigerEnclosure = null;
+        Enclosure parrotEnclosure = null;
+        Enclosure clownfishEnclosure = null;
 
         Animal tiger = new Tiger("Tony", 8);
         Animal clownfish = new ClownFish("Nemo", 2);
@@ -46,20 +49,20 @@ public class ZooKeeper {
 
                     switch (sc.nextInt()) {
                         case 1:
-                            enclosure = new BigCat("Big Cats");
-                            zoo.addEnclosure(enclosure);
+                            tigerEnclosure = new BigCat("Big Cats");
+                            zoo.addEnclosure(tigerEnclosure);
                             System.out.println("Big Cats enclosure added!");
                             break;
 
                         case 2:
-                            enclosure = new Aquarium("Aquarium");
-                            zoo.addEnclosure(enclosure);
+                            clownfishEnclosure = new Aquarium("Aquarium");
+                            zoo.addEnclosure(clownfishEnclosure);
                             System.out.println("Aquarium added!");
                             break;
 
                         case 3:
-                            enclosure = new Aviary("Aviary");
-                            zoo.addEnclosure(enclosure);
+                            parrotEnclosure = new Aviary("Aviary");
+                            zoo.addEnclosure(parrotEnclosure);
                             System.out.println("Aviary added!");
                             break;
                     }
@@ -74,21 +77,33 @@ public class ZooKeeper {
                     switch (sc.nextInt()) {
 
                         case 1:
-                            enclosure.addAnimal(tiger);
+                            if (tigerEnclosure != null) {
+                                tigerEnclosure.addAnimal(tiger);
+                            } else {
+                                System.out.println("BigCat enclosure unavailable!");
+                            }
                             break;
 
                         case 2:
-                            enclosure.addAnimal(clownfish);
+                            if (clownfishEnclosure != null) {
+                                clownfishEnclosure.addAnimal(clownfish);
+                            } else {
+                                System.out.println("Aquarium unavailable!");
+                            }
                             break;
 
                         case 3:
-                            enclosure.addAnimal(parrot);
+                            if (parrotEnclosure != null) {
+                                parrotEnclosure.addAnimal(parrot);
+                            } else {
+                                System.out.println("Aviary unavailable");
+                            }
                             break;
                     }
 
                 case 3:
 
-                    System.out.println("Please select the animal you would like to feed: ");
+                    System.out.println("Please select the animals you would like to feed: ");
                     System.out.println("Type 1 for Tiger");
                     System.out.println("Type 2 for ClownFish");
                     System.out.println("Type 3 for Parrot");
@@ -96,15 +111,26 @@ public class ZooKeeper {
                     switch (sc.nextInt()) {
 
                         case 1:
+                            ArrayList<Animal> tigers = tigerEnclosure.getAnimals();
+                            for (Animal tiger1 : tigers) {
+                                System.out.println(tiger1.getName());
+                            }
 
                             break;
 
                         case 2:
+                            ArrayList<Animal> clownFish  = clownfishEnclosure.getAnimals();
+                            for (Animal clownfish1 : clownFish) {
+                                System.out.println(clownfish1.getName());
+                            }
 
                             break;
 
                         case 3:
-                            
+                            ArrayList<Animal> parrots  = parrotEnclosure.getAnimals();
+                            for (Animal parrot1 : parrots) {
+                                System.out.println(parrots);
+                            }
                             break;
                     }
 
